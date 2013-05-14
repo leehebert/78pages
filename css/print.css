@@ -1,0 +1,44 @@
+@page				{ size: letter portrait; width:8.5in; height:11in; margin:.75in .75in .75in .75in; }
+
+body			    { font-family: 'Droid Sans', sans-serif; color:#000; font-size:12pt2}	 
+a				    { text-decoration: none; color: #000; }
+.title				{ font-size:36pt; font-weight: 300; font-family: 'Open Sans', sans-serif;}
+h1, .h1				{ font-size:24pt; font-weight: 700; font-family: 'Open Sans', sans-serif;}
+h2, .h2				{ font-size:18pt; font-weight: 400; font-family: 'Open Sans', sans-serif;}
+h3, .h3				{ font-size:12pt; font-weight:bold; font-family: 'Open Sans', sans-serif;}
+p					{ text-align:justify; margin-bottom:11pt; }
+
+.No_Print			{ display: none; }
+.Clear				{ clear:both; }
+.Page				{ page-break-inside:avoid; height:9.41in; clear:both; margin-bottom:1in; }
+.V_Line				{ height:99%; position:absolute; float:left; margin-left:2.0675in; border-right:solid #000 2px; }
+.Box				{ position:relative; width:100%; margin-bottom:12pt; clear:both; min-height:22pt; }
+.Left				{ font-size:11pt; text-align:right; width:2in; float:left; }
+.Right				{ font-size:11pt; text-align:left; width:4.8in; margin-left:2in; padding-left:.125in; }
+.Right_Align		{ text-align:right; }
+.Title				{ font-size:18pt; margin-bottom:18pt; }
+.Sub_Title			{ font-size:11pt; }
+.Padding			{ margin-bottom:33pt; }
+.Small				{ font-size:9pt; }
+.Bottom				{ position:relative; bottom:0in; }
+.bom				{ width: 100%; }
+.Header_Row			{ font-weight:bold; border-bottom:solid #333 2px; margin-bottom:6pt; }
+.Bottom_Row			{ border-bottom:solid #333 1px; margin-bottom:6pt;}
+.bom ul				{ display:inline; text-decoration:none; }
+.bom li				{ float:left; display:block; font-size: 10pt; }
+.even 				{ background:url(./img/BomBkgd.jpg) repeat; }
+.clear 				{ clear:both; }
+
+.R1, 
+.R2,
+.R3,
+.R4,
+.R5					{ padding:2.5pt 5pt 2.5pt 5pt; }
+
+.R1,
+.R2 				{ width:.25in; text-align:center; }
+
+.R3,
+.R4 				{ width:1.5in; text-align:left; }
+
+.R5 				{ text-align:left; width:2.5in; }
