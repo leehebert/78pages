@@ -50,11 +50,11 @@
 	/* Table of Contents */	
 		$read->toc ($job) ; 
 		$toc = $read->result ;
-		$tocCount = $read->count - 1 ;	
 		
 	/* bill of materials */
 		$read->bom ($job) ;
-		$bom = $read->bom ;
+        $bom = $read->bom ;
+
 		
 		
 		
