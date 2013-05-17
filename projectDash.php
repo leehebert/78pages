@@ -103,7 +103,15 @@
 			<div class="prefix_1 grid_9">
 				<div class="container_12">
 					<div class="grid_6">
-					<?php print_r ($bom); ?>
+					<?php 
+                        $count = 0;
+    while ($count < 9 ) {
+        $row = $toc [$count];
+        echo $row ['tab'] . " = " . $row ['include'] ;
+        echo "</br>";
+        $count = $count+1;
+        }
+                    ?>
 					</div>
 					<div class="grid_2 options">
 						
@@ -146,22 +154,26 @@
 							</table>
 						</div>
 							
-								<?php IF ($bom == -1) {
-								echo "" ;
-								} ELSE {
-								FOREACH ($bom AS $value) { ?>
+								<?php 
+                                $line_count = count($bom) ;
+                                $line_item = 0 ;
+                                while ($line_item < $line_count) {
+                                    $current_item = $bom [$line_item] ;
+                                 ?>
 						<div class="bom" >
 							<table>
 									<tr>
-										<td class="partNumber" ><?php echo $value ['partNumber'] ; ?></td>
-										<td class="qty" ><?php echo $value ['qty'] ; ?></td>
-										<td class="mfg" ><?php echo $value ['mfg'] ; ?></td> 
-										<td class="desc" ><?php echo $value ['description'] ; ?></td> 
+										<td class="partNumber" ><?php echo $current_item ['part_number'] ; ?></td>
+										<td class="qty" ><?php echo $current_item ['qty'] ; ?></td>
+										<td class="mfg" ><?php echo $current_item ['mfg'] ; ?></td> 
+										<td class="desc" ><?php echo $current_item ['description'] ; ?></td> 
 									</tr>
 								</table> 
 						</div>
-								<?php  } 
-								}?>
+								<?php  
+                                    $line_item = $line_item+1 ;
+                                } 
+								?>
 			</div>
       			  
 
